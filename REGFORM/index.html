@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hands-On Training Registration</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Cambria', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20;
+      text-align: left;
+    }
+
+    /* Container for Form */
+    .container {
+      width: 80%;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-top: 35px;
+      background: linear-gradient(to right, #dfe9f3, white);
+    }
+
+    /* Header Section */
+    .header {
+      background-color: #0044cc;
+      padding: 10px 0;
+      text-align: center;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .header-img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+            margin-bottom: 20 px;
+    }
+
+   
+    /* Form Styling */
+    label {
+      font-weight: bold;
+      font-size: 18px;
+      display: block;
+      margin: 12px 0 6px;
+      color: #333;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    /* Module Selection */
+    .module-selection {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .module-selection div {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    /* Button Styling */
+    button {
+      padding: 14px 30px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section with Logo -->
+  <div class="header">
+   <img src="COMPESA.jpg" alt="Header Image" class="header-img">
+   
+    <p style="font-size: 18px; margin-top: 10px;">Please fill out this form to register for the internship program. Select your desired skill and provide your details</p>
+  </div>
+
+  <!-- Form Section -->
+  <div class="container">
+    <form action="https://script.google.com/macros/s/AKfycbzFIJX-KfxFE1u5rUXgFpBD12LJ3BhrwRmoSen0USGUhDfIHuHv2uxxWRd7s_n2vE0M6Q/exec" method="POST">
+      
+      <!-- Full Name -->
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <!-- Email Address -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Phone Number -->
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+
+      <!-- Gender -->
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Module Selection -->
+      <label for="module-selection">Select your desired skill:</label>
+      <div class="module-selection">
+        <div>
+          <input type="checkbox" id="networking" name="module" value="Networking">
+          <label for="networking">Networking</label>
+        </div>
+        <div>
+          <input type="checkbox" id="microcontroller" name="module" value="Microcontroller">
+          <label for="microcontroller">Microcontroller</label>
+        </div>
+		 <div>
+          <input type="checkbox" id="microcontroller" name="module" value="Microcontroller">
+          <label for="microcontroller">Networking & Microcontroller</label>
+        </div>
+      </div>
+			
+     <div class="form-group">
+                <label for="Depertment" class="required">Depertment:</label>
+                <input type="Depertment" id="Depertment" name="Depertment" required>
+            </div>
+
+      <!-- Educational Information -->
+      <label for="education">Highest Level of Education:</label>
+      <select id="education" name="education">
+        <option value="highschool">High School</option>
+        <option value="undergraduate">Undergraduate</option>
+        <option value="graduate">Graduate</option>
+        <option value="postgraduate">Postgraduate</option>
+      </select>
+
+      <!-- Institution/University -->
+      <label for="institution">Institution/University:</label>
+      <input type="text" id="institution" name="institution">
+
+     
+	   <div class="form-group full-width" style="margin-top: 30px;">
+            <label>Payment Details:</label>
+            <p>
+                Pay to: <br>
+                Account Name: Muhammad Liman Adamu <br>
+                Account Number: 1224564512 <br>
+                Bank: Access Bank <br>
+                Amount: N7,000
+            </p>
+            <p><strong>NB:</strong> N7,000 for each training. If you are registering for both Networking and Microcontroller, 
+            you will have a discount of N3,000, i.e. you are paying N11,000 only. Forward a copy of your payment receipt 
+            to this contact: <strong>08163238016</strong>. Thank you.</p>
+        </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+	  
+    </form>
+  </div>
+  
+
+</body>
+</html>
